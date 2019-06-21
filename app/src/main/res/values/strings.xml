@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My First Login</string>
-    !-- Inicio de sesión -->
+    <!-- Inicio de sesión -->
     <string name="login_txt_title">Inicio de sesión</string>
     <string name="login_ipt_username">Nombre de usuario</string>
     <string name="login_ipt_password">Contraseña</string>
@@ -24,4 +24,31 @@
         HTTP %d</string>
     <string name="api_dlg_error_msg_rest">El servicio otorgó un error.\nCódigo de error: %d</string>
     <string name="api_dlg_error_msg_empty">El servicio no otorgó respuesta.</string>
+    <string name="title_activity_prueba">prueba</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- Mensajes de activity agenda-->
+    <string name="agenda_txt_title">Mi Agenda</string>
+    <!-- Mensajes de activity cursos-->
+    <string name="curso_txt_title">Mis Cursos</string>
+    <string name="curso_lbl_cursando">CURSANDO</string>
+    <string name="curso_lbl_dictando">DICTANDO</string>
+    <!-- Mensajes de activity cursos-->
+    <string name="perfil_txt_title">Mi Perfil</string>
+    <string name="perfil_lbl_estadisticas">Estadísticas</string>
+    <string name="perfil_lbl_notificaciones">Recibir Notificaciones</string>
+    <string name="perfil_lbl_ciclo">Elegir ciclo:</string>
+    <string name="perfil_lbl_tema">Elegir tema:</string>
+    <!-- Mensajes de activity cursos-->
+    <string name="tomaasistencia_txt_title">Toma de Asistencia</string>
+    <string name="tomaasistencia_lbl_alumno">Alumno</string>
+    <string name="tomaasistencia_lbl_codigo">Código</string>
+    <string name="tomaasistencia_lbl_curso">Curso</string>
+    <string name="tomaasistencia_lbl_docente">Docente</string>
+    <string name="tomaasistencia_lbl_clave">Clave</string>
+    <string name="tomaasistencia_lbl_aceptar">Aceptar</string>
 </resources>

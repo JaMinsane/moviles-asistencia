@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".features.tomaasistencia.ActivityTomaAsistencia"></activity>
+        <activity android:name=".features.perfil.ActivityPerfil" />
+        <activity android:name=".features.cursos.ActivityCursos" />
+        <activity android:name=".features.agenda.AgendaActivity" />
         <activity android:name=".features.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,27 +4,27 @@ import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity(tableName = "USER")
-
-public class User {
+@Entity(tableName = "PROFESSOR")
+public class Professor {
     @PrimaryKey
-    @ColumnInfo(name = "USER_ID")
-    private int userId;
-
+    @ColumnInfo(name = "PROFESSOR_ID")
+    private int professorId;
     @ColumnInfo(name = "FULL_NAME")
     private String fullName;
-
     @ColumnInfo(name = "EMAIL")
     private String email;
-
-    @ColumnInfo(name = "USERNAME")
-    private String username;
-
     @ColumnInfo(name = "HASH")
     private String hash;
 
-    public int getUserId() {
-        return userId;
+    public Professor(int professorId, String fullName, String email, String hash) {
+        this.professorId = professorId;
+        this.fullName = fullName;
+        this.email = email;
+        this.hash = hash;
+    }
+
+    public int getProfessorId() {
+        return professorId;
     }
 
     public String getFullName() {
@@ -34,20 +34,7 @@ public class User {
     public String getEmail() {
         return email;
     }
-
-    public String getUsername() {
-        return username;
-    }
-
     public String getHash() {
         return hash;
-    }
-
-    public User(int userId, String fullName, String email, String username, String hash) {
-        this.userId = userId;
-        this.fullName = fullName;
-        this.email = email;
-        this.username = username;
-        this.hash = hash;
     }
 }

@@ -7,8 +7,10 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/agenda_rcv_tarjetero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="3"
+        tools:listitem="@layout/fragment_agenda_card">
 
     </android.support.v7.widget.RecyclerView>
 </FrameLayout>

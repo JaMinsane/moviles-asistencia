@@ -90,12 +90,10 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        getActivity().setTitle(R.string.home_txt_title);
         mFullName = view.findViewById(R.id.home_txt_fullname);
         mEmail = view.findViewById(R.id.home_txt_email);
-
         showUserDetails();
-
-
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -104,6 +102,8 @@ public class HomeFragment extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
+
+
 
     /*@Override
     public void onAttach(Context context) {

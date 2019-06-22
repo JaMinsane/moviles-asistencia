@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/agenda_lyt_linear_father"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/agenda_txt_fecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="30dp"
+        tools:text = "Jueves 02 de mayo del 2019"/>
 
     <View
         android:id="@+id/agenda_vie_barra"
@@ -22,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -30,8 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_weight="1"
-            android:text="TextView"
-            android:textColor="#990000" />
+            android:textColor="#990000"
+            tools:text="IEE246"/>
 
         <TextView
             android:id="@+id/agenda_txt_nombre_curso"
@@ -39,39 +43,53 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="110dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            tools:text="Teoría de control 1"
+            />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/agenda_lyt_segundo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/agenda_img_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_access_time_black_24dp" />
 
         <TextView
             android:id="@+id/agenda_txt_hora_curso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textColor="#202447" />
+            android:layout_marginStart="10dp"
+            android:textColor="#202447"
+            tools:text="08:00 - 10:00"/>
+
+        <ImageView
+            android:id="@+id/agenda_img_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:layout_marginStart="40dp"/>
 
         <TextView
             android:id="@+id/agenda_txt_tipo_clase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textColor="#202447" />
+            android:textColor="#202447"
+            android:layout_marginStart="10dp"
+            tools:text="T Cla"/>
 
         <TextView
             android:id="@+id/agenda_txt_tipo_salon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
+            android:layout_marginStart="5dp"
+            tools:text="(A206)" />
     </LinearLayout>
 </LinearLayout>

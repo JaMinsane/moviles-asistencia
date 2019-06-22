@@ -43,12 +43,9 @@ public class TomaAsistenciaFragment extends Fragment {
      * @return A new instance of fragment TomaAsistenciaFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static TomaAsistenciaFragment newInstance(String param1, String param2) {
+    public static TomaAsistenciaFragment newInstance() {
         TomaAsistenciaFragment fragment = new TomaAsistenciaFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -64,6 +61,7 @@ public class TomaAsistenciaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        getActivity().setTitle(R.string.tomaasistencia_txt_title);
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_toma_asistencia, container, false);
     }
@@ -74,7 +72,7 @@ public class TomaAsistenciaFragment extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
+    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -91,7 +89,7 @@ public class TomaAsistenciaFragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
-
+    */
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated

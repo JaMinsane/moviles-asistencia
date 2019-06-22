@@ -15,7 +15,9 @@ import android.view.Menu;
 
 import pe.edu.pucp.a20152252.myfirstlogin.R;
 import pe.edu.pucp.a20152252.myfirstlogin.features.agenda.AgendaFragment;
+import pe.edu.pucp.a20152252.myfirstlogin.features.cursos.CursosFragment;
 import pe.edu.pucp.a20152252.myfirstlogin.features.home.HomeFragment;
+import pe.edu.pucp.a20152252.myfirstlogin.features.perfil.PerfilFragment;
 
 public class BarActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -84,9 +86,15 @@ public class BarActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.home_lyt_frame, AgendaFragment.newInstance());
             fragmentTransaction.commit();
         } else if (id == R.id.menu_nav_cursos) {
-
+            FragmentManager fragmentManager = this.getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.home_lyt_frame, CursosFragment.newInstance());
+            fragmentTransaction.commit();
         } else if (id == R.id.menu_nav_perfil) {
-
+            FragmentManager fragmentManager = this.getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.home_lyt_frame, PerfilFragment.newInstance());
+            fragmentTransaction.commit();
         } else if (id == R.id.menu_nav_logout) {
 
         }

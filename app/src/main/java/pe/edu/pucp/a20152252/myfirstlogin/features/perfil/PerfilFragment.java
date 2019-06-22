@@ -1,6 +1,5 @@
 package pe.edu.pucp.a20152252.myfirstlogin.features.perfil;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,12 +12,12 @@ import pe.edu.pucp.a20152252.myfirstlogin.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link FragmentPerfil.OnFragmentInteractionListener} interface
+ * {@link PerfilFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link FragmentPerfil#newInstance} factory method to
+ * Use the {@link PerfilFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentPerfil extends Fragment {
+public class PerfilFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +29,7 @@ public class FragmentPerfil extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public FragmentPerfil() {
+    public PerfilFragment() {
         // Required empty public constructor
     }
 
@@ -40,15 +39,12 @@ public class FragmentPerfil extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentPerfil.
+     * @return A new instance of fragment PerfilFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentPerfil newInstance(String param1, String param2) {
-        FragmentPerfil fragment = new FragmentPerfil();
+    public static PerfilFragment newInstance() {
+        PerfilFragment fragment = new PerfilFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -64,6 +60,7 @@ public class FragmentPerfil extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        getActivity().setTitle(R.string.perfil_txt_title);
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_perfil, container, false);
     }
@@ -74,7 +71,7 @@ public class FragmentPerfil extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
+    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -91,7 +88,7 @@ public class FragmentPerfil extends Fragment {
         super.onDetach();
         mListener = null;
     }
-
+    */
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated

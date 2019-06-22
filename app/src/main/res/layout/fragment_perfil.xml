@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.perfil.FragmentPerfil">
+    tools:context=".features.perfil.PerfilFragment">
 
     <LinearLayout
         android:id="@+id/perfil_lyt_informacion"
@@ -19,16 +19,18 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_person_black_24dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginStart="50dp">
 
                 <TextView
                     android:id="@+id/textView3"
@@ -67,10 +69,11 @@
 
         <ImageView
             android:id="@+id/perfil_img_graph"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginTop="20dp"
-            tools:srcCompat="@tools:sample/avatars[7]" />
+            android:layout_gravity="center"
+            android:src="@drawable/ic_show_chart_black_24dp" />
 
         <Switch
             android:id="@+id/perfil_swt_notificaciones"

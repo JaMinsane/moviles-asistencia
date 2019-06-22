@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.perfil.PerfilFragment">
+    tools:context=".features.perfil.PerfilFragment"
+    android:background="#F1E4F7">
 
     <LinearLayout
         android:id="@+id/perfil_lyt_informacion"
@@ -23,35 +24,36 @@
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:layout_marginStart="50dp"
-                android:src="@drawable/ic_person_black_24dp" />
+                android:src="@drawable/ic_person_black_24dp"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:layout_marginStart="50dp">
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    tools:text="James Jaramillo" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    tools:text="20150605"/>
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    tools:text="2019-1" />
             </LinearLayout>
 
         </LinearLayout>
@@ -106,7 +108,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="1"
-                android:minWidth="50dp" />
+                android:minWidth="50dp"
+                />
 
             <TextView
                 android:id="@+id/perfil_lbl_tema"
@@ -122,10 +125,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                />
         </LinearLayout>
-
-        @+id/perfil_lyt_foto_nombre
-
     </LinearLayout>
 </FrameLayout>

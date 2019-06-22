@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
+    android:background="#33B5E5"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -14,13 +14,14 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/nav_header_img_perfil"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:contentDescription="@android:string/ok"
         android:src="@drawable/ic_person_black_24dp" />
 
     <TextView
+        android:id="@+id/nav_txt_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -28,7 +29,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nav_txt_codigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/menu_txt_codigo"

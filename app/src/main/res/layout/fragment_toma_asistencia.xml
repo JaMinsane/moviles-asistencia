@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.tomaasistencia.TomaAsistenciaFragment">
+    tools:context=".features.tomaasistencia.TomaAsistenciaFragment"
+    android:background="#F1E4F7">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,15 +25,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/tomaasistencia_lbl_docente"
-                android:width="45dp"/>
+                android:text="@string/tomaasistencia_lbl_docente" />
 
             <TextView
                 android:id="@+id/tomaasistencia_txt_docente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+
+                android:layout_gravity="end"
+                tools:text="James Jaramillo Huamán"/>
         </LinearLayout>
 
         <LinearLayout
@@ -50,14 +51,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/tomaasistencia_lbl_codigo"
-                android:width="45dp"/>
+                android:width="20dp"/>
 
             <TextView
                 android:id="@+id/tomaasistencia_txt_codigo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+
+
+                tools:text="2015065" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,8 +84,8 @@
                 android:id="@+id/tomaasistencia_txt_curso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+
+                tools:text="Laboratorio de Máquinas Eléctricas" />
         </LinearLayout>
 
         <LinearLayout
@@ -108,8 +110,8 @@
                 android:id="@+id/tomaasistencia_txt_alumno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+
+                tools:text="Oscar Melgarejo" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
             android:orientation="horizontal">
 

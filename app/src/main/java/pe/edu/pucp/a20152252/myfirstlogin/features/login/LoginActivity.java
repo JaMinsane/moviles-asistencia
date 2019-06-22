@@ -13,6 +13,7 @@ import android.widget.EditText;
 
 import pe.edu.pucp.a20152252.myfirstlogin.R;
 import pe.edu.pucp.a20152252.myfirstlogin.features.home.HomeActivity;
+import pe.edu.pucp.a20152252.myfirstlogin.features.mainbar.BarActivity;
 import pe.edu.pucp.a20152252.myfirstlogin.utils.Utilities;
 
 public class LoginActivity extends AppCompatActivity implements ILoginView {
@@ -88,13 +89,12 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
                 })
                 .setNegativeButton(android.R.string.no, null)
                 .show();
-
     }
 
     @Override
     public void goToHomePage(String fullName, String email) {
         // Iniciar la actividad principal
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, BarActivity.class);
         intent.putExtra(LOGIN_EXTRA_FULLNAME, fullName);
         intent.putExtra(LOGIN_EXTRA_EMAIL, email);
         startActivity(intent);

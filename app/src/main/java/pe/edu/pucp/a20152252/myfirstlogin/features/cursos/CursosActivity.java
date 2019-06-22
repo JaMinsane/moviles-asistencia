@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import pe.edu.pucp.a20152252.myfirstlogin.R;
 
-public class ActivityCursos extends AppCompatActivity {
+public class CursosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

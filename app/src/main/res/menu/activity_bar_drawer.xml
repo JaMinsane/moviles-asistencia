@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_grp_items"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_nav_agenda"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/menu_txt_agenda" />
+        <item
+            android:id="@+id/menu_nav_cursos"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/menu_txt_cursos" />
+        <item
+            android:id="@+id/menu_nav_perfil"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/menu_txt_perfil" />
+        <item
+            android:id="@+id/menu_nav_logout"
+            android:icon="@android:drawable/ic_delete"
+            android:title="@string/menu_txt_logout" />
+    </group>
+
+</menu>

@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void showUserDetails() {
-        Bundle extras = getIntent().getExtras();
+        Bundle extras =  getIntent().getExtras();
         if (extras != null) {
             // Obtener los valores enviados por el Intent
             String fullName = extras.getString(LoginActivity.LOGIN_EXTRA_FULLNAME);

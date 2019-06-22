@@ -51,4 +51,16 @@
     <string name="tomaasistencia_lbl_docente">Docente</string>
     <string name="tomaasistencia_lbl_clave">Clave</string>
     <string name="tomaasistencia_lbl_aceptar">Aceptar</string>
+    <string name="title_activity_bar">ActivityBar</string>
+    <!-- Mensajes de activity menu-->
+    <string name="menu_txt_agenda">Mi Agenda</string>
+    <string name="menu_txt_cursos">Mis Cursos</string>
+    <string name="menu_txt_perfil">Mi perfil</string>
+    <string name="menu_txt_logout">Logout</string>
+
+    <string name="menu_txt_nombre">James Jaramillo Huamán</string>
+    <string name="menu_txt_codigo">20150605</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

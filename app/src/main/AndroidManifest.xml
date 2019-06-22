@@ -17,18 +17,7 @@
             android:name=".features.mainbar.BarActivity"
             android:label="@string/title_activity_bar"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".features.tomaasistencia.ActivityTomaAsistencia" />
-        <activity android:name=".features.perfil.ActivityPerfil" />
-        <activity android:name=".features.cursos.CursosActivity" />
-        <activity android:name=".features.agenda.AgendaActivity" />
         <activity android:name=".features.login.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".features.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

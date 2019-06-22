@@ -1,14 +1,14 @@
 package pe.edu.pucp.a20152252.myfirstlogin.features.home;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import pe.edu.pucp.a20152252.myfirstlogin.R;
@@ -71,11 +71,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        mFullName = view.findViewById(R.id.home_txt_fullname);
-        mEmail = view.findViewById(R.id.home_txt_email);
-        mLogout = view.findViewById(R.id.home_btn_logout);
-
-        showUserDetails();
 
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
@@ -90,6 +85,17 @@ public class HomeFragment extends Fragment {
             mFullName.setText(fullName);
             mEmail.setText(email);
         }
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mFullName = view.findViewById(R.id.home_txt_fullname);
+        mEmail = view.findViewById(R.id.home_txt_email);
+
+        showUserDetails();
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
